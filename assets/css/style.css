@@ -515,6 +515,8 @@ header nav a:hover .svg_img {
   height: 35px;
 }
 
+
+
 /* End Header */
 /*-------------------------------------------------
  Hero Style CSS
@@ -1032,6 +1034,51 @@ header nav a:hover .svg_img {
 .ms-about .ms-box .progress.active .value {
   fill: #ff6f91;
 }
+
+
+
+
+
+
+
+
+
+.ventures-focus span {
+    display: inline-block;
+    margin: 5px 10px;
+    padding: 8px 15px;
+    background-color: #716FFE; /* your brand colour */
+    color: #fff;
+    border-radius: 25px;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*===== Service css =====*/
 .service-box {
@@ -2016,6 +2063,8 @@ footer .ms-footer-detail .ms-social ul li a {
 footer .ms-footer-detail .ms-social ul li a:hover {
   background: #716fff;
 }
+
+
 
 /*===== Sidebar css =====*/
 .ms-sidebar-overlay {
