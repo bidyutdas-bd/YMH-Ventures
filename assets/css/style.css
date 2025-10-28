@@ -642,14 +642,20 @@ header nav a:hover .svg_img {
   font-size: 56px;
   font-weight: 800;
   z-index: 5;
+  /* color: #749ED8; */
+  
+
 }
 .ms-hero .hero-content .ms-hero-detail .ms-hero-title span {
   max-width: 400px;
   display: -ms-inline-grid;
   display: inline-grid;
+  
 }
 .ms-hero .hero-content .ms-hero-detail .ms-hero-title .name {
-  color: #749ED8;
+  color: #8E4919;
+    
+
 }
 .ms-hero .hero-content .ms-hero-detail .ms-hero-detail {
   margin-bottom: 30px;
@@ -657,6 +663,7 @@ header nav a:hover .svg_img {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
+  
 }
 .ms-hero .hero-content .ms-hero-img {
   max-width: 350px;
@@ -671,8 +678,12 @@ header nav a:hover .svg_img {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   width: 100%;
-  -webkit-filter: grayscale(100%);
-          filter: grayscale(100%);
+  /* -webkit-filter: grayscale(100%);
+          filter: grayscale(100%); */
+/* -webkit-filter: invert(100%);
+filter: invert(100%); */
+  filter: grayscale(100%) brightness(200%);
+  -webkit-filter: grayscale(100%) brightness(200%);
 }
 .ms-hero .hero-content .ms-hero-img .ms-card:hover {
   -webkit-box-shadow: 0 0 22px 0 rgba(0, 0, 0, 0.5);
