@@ -136,6 +136,7 @@ p {
 }
 .section-title h2 span {
   color: #8E4919;
+  
 }
 .section-title .ligh-title {
   margin: auto;
@@ -643,6 +644,9 @@ header nav a:hover .svg_img {
   font-weight: 800;
   z-index: 5;
   /* color: #749ED8; */
+   margin-right: 0px; /* move left */
+
+  
   
 
 }
@@ -650,10 +654,12 @@ header nav a:hover .svg_img {
   max-width: 400px;
   display: -ms-inline-grid;
   display: inline-grid;
+
+
   
 }
 .ms-hero .hero-content .ms-hero-detail .ms-hero-title .name {
-  color: #8E4919;
+  color: #FF6F91;
     
 
 }
@@ -1671,6 +1677,15 @@ li.mixitup-control-active {
 
 /** End Portfolio Section **/
 /*===== Counter =====*/
+
+/* keep Three boxes in the center */
+.achive {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px; 
+}
+
 .achive .count-block {
   width: 100%;
   margin: 12px 0;
