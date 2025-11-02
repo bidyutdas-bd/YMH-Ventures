@@ -284,7 +284,9 @@ p {
 
 /**  Section spacing  **/
 .margin-t-80 {
-  margin-top: 80px;
+  /* margin-top: 80px; */
+  margin-top: 0px;
+  padding-top: 0px;
 }
 
 .margin-b-50 {
@@ -1524,7 +1526,7 @@ li.mixitup-control-active {
   font-size: 14px;
 }
 .ms-project-box p a {
-  color: #749ED8;
+  color: #efaa54;
 }
 .ms-project-box .ms-info {
   margin-top: 30px;
@@ -1809,7 +1811,7 @@ li.mixitup-control-active {
 .ms-news .news-info .detail .more-info a {
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  color: #749ED8;
+  color: #efaa54;
   text-align: center;
   font-size: 13px;
   text-decoration: none;
@@ -2074,6 +2076,7 @@ footer .ms-footer-detail .ms-social ul li a:hover {
   left: 0;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 16;
+  
 }
 
 .ms-open {
@@ -2102,6 +2105,7 @@ footer .ms-footer-detail .ms-social ul li a:hover {
   overflow: auto;
   opacity: 1;
   z-index: 16;
+      
 }
 .ms-sidebar:before {
   content: "";
@@ -2196,7 +2200,6 @@ footer .ms-footer-detail .ms-social ul li a:hover {
 .ms-sidebar ul li.active a:after {
   width: 25px;
 }
-
 /* End Sidebar */
 
 
@@ -2207,33 +2210,40 @@ footer .ms-footer-detail .ms-social ul li a:hover {
 /* blog page CSS */
 /* Global container to restrict content */
 .vn-blog-container {
-    max-width:1200px; margin:0 auto; padding:0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* Hero Section */
 .vn-blog-hero-section {
-    width:100%; background:#07293f; padding:80px 0; text-align:center; color:#fff;
+    width: 100%;
+    background: #07293f;
+    padding: 80px 0;
+    text-align: center;
+    color: #fff;
 }
 
 .vn-blog-breadcrumb {
-    font-size:14px; margin-bottom:15px; color:#efaa54;
+    font-size: 14px;
+    margin-bottom: 15px;
+    color: #efaa54;
 }
-
 .vn-blog-breadcrumb a {
-    text-decoration:none; color: #fff; /* gold accent for links */
+    text-decoration: none;
+    color: #fff;
 }
-
 .vn-blog-breadcrumb span {
-    color:#efaa54;
+    color: #efaa54;
 }
 
 .vn-blog-hero-title {
-    font-size:48px; margin:10px 0; color:#efaa54; /* gold accent */
+    font-size: 48px;
+    margin: 10px 0;
+    color: #efaa54;
 }
 
-.vn-blog-hero-subtitle {
-    font-size:18px; color:#fff;
-}
+
 
 /* Blog Post Section */
 .vn-blog-post {
@@ -2275,4 +2285,676 @@ footer .vn-blog-container {
     max-width:1200px; margin:0 auto; padding:0 15px;
 }
 
+
+
+
+/* Voktis individual page CSS */
+/* Breadcrumb Section */
+/* Hero Container */
+.vk-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+/* Hero Section */
+.vk-hero-section {
+    width: 100%;
+    background-color: #07293f; /* Dark blue */
+    padding: 100px 0; /* More vertical height than blog hero */
+    color: #fff;
+}
+
+/* Breadcrumb */
+.vk-hero-breadcrumb {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #efaa54;
+}
+.vk-hero-breadcrumb a {
+    text-decoration: none;
+    color: #ffffff; /* White links */
+}
+.vk-hero-breadcrumb span {
+    color: #efaa54; /* Gold accent */
+    font-weight: 600;
+}
+
+/* Hero Title */
+.vk-hero-title {
+    font-size: 3rem; /* Slightly smaller than blog hero */
+    margin: 10px 0 0 0;
+    color: #efaa54; /* Gold accent */
+    font-weight: 700;
+}
+
+/* Page Title */
+.vk-page-title {
+    text-align: center;
+    padding: 60px 20px 0px 20px;
+    background-color: #ffffff;
+}
+.vk-page-title h1 {
+    font-size: 2.5rem;
+    color: #07293f;
+    margin: 0;
+    font-weight: 700;
+}
+
+/* About Section */
+.vk-about-section {
+    background-color: #ffffff;
+
+}
+/* Parent Flex Container */
+.vk-flex {
+    display: flex;
+    align-items: center; /* Vertically centre left and right divs */
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Left Div */
+.vk-about-left {
+    flex: 1 1 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* H2 container for vertical centering */
+.vk-about-heading {
+    display: flex;
+    align-items: center; /* Vertically center H2 within left div */
+    margin-bottom: 20px;
+}
+
+/* H2 Style */
+.vk-about-left h2 {
+    font-size: 2rem;
+    color: #07293f;
+    margin: 0;
+}
+
+/* Paragraphs */
+.vk-about-left p {
+    font-size: 1.125rem;
+    color: #000000;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.vk-about-left p:last-child {
+    margin-bottom: 0;
+}
+
+/* Right Div */
+.vk-about-right {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column; /* Stack logo and button vertically */
+    justify-content: center; /* Vertically centre content relative to left div */
+    align-items: center;     /* Horizontally centre content */
+    text-align: center;
+}
+.vk-about-right .vk-logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.vk-about-right .vk-btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #efaa54;
+    color: #07293f;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.vk-about-right .vk-btn-primary:hover {
+    background-color: #07293f;
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .vk-flex {
+        flex-direction: column;
+        align-items: center; /* Center all for smaller screens */
+        text-align: center;
+    }
+    .vk-about-left, .vk-about-right {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* Brightemy individual page CSS */
+/* Hero Container */
+.br-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+/* Hero Section */
+.br-hero-section {
+    width: 100%;
+    background-color: #07293f; /* Dark blue */
+    padding: 100px 0;
+    color: #fff;
+}
+
+/* Breadcrumb */
+.br-hero-breadcrumb {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #efaa54;
+}
+.br-hero-breadcrumb a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.br-hero-breadcrumb span {
+    color: #efaa54;
+    font-weight: 600;
+}
+
+/* Hero Title */
+.br-hero-title {
+    font-size: 3rem;
+    margin: 10px 0 0 0;
+    color: #efaa54;
+    font-weight: 700;
+}
+
+/* About Section */
+.br-about-section {
+    background-color: #ffffff;
+}
+
+/* Parent Flex Container */
+.br-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Left Div */
+.br-about-left {
+    flex: 1 1 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* H2 container */
+.br-about-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* H2 Style */
+.br-about-left h2 {
+    font-size: 2rem;
+    color: #07293f;
+    margin: 0;
+}
+
+/* Paragraphs */
+.br-about-left p {
+    font-size: 1.125rem;
+    color: #000000;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.br-about-left p:last-child {
+    margin-bottom: 0;
+}
+
+/* Right Div */
+.br-about-right {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.br-about-right .br-logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.br-about-right .br-btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #efaa54;
+    color: #07293f;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.br-about-right .br-btn-primary:hover {
+    background-color: #07293f;
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .br-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .br-about-left, .br-about-right {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+/* Cr8 Ease individual page CSS */
+/* Hero Container */
+.cr8-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+/* Hero Section */
+.cr8-hero-section {
+    width: 100%;
+    background-color: #07293f; /* Dark blue */
+    padding: 100px 0;
+    color: #fff;
+}
+
+/* Breadcrumb */
+.cr8-hero-breadcrumb {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #efaa54;
+}
+.cr8-hero-breadcrumb a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.cr8-hero-breadcrumb span {
+    color: #efaa54;
+    font-weight: 600;
+}
+
+/* Hero Title */
+.cr8-hero-title {
+    font-size: 3rem;
+    margin: 10px 0 0 0;
+    color: #efaa54;
+    font-weight: 700;
+}
+
+/* About Section */
+.cr8-about-section {
+    background-color: #ffffff;
+}
+
+/* Parent Flex Container */
+.cr8-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Left Div */
+.cr8-about-left {
+    flex: 1 1 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* H2 container */
+.cr8-about-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* H2 Style */
+.cr8-about-left h2 {
+    font-size: 2rem;
+    color: #07293f;
+    margin: 0;
+}
+
+/* Paragraphs */
+.cr8-about-left p {
+    font-size: 1.125rem;
+    color: #000000;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.cr8-about-left p:last-child {
+    margin-bottom: 0;
+}
+
+/* Right Div */
+.cr8-about-right {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.cr8-about-right .cr8-logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.cr8-about-right .cr8-btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #efaa54;
+    color: #07293f;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.cr8-about-right .cr8-btn-primary:hover {
+    background-color: #07293f;
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .cr8-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .cr8-about-left, .cr8-about-right {
+        flex: 1 1 100%;
+    }
+}
+
+
+/* Zaarbit individual page CSS */
+/* Hero Container */
+.zaar-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+/* Hero Section */
+.zaar-hero-section {
+    width: 100%;
+    background-color: #07293f; /* Dark blue */
+    padding: 100px 0;
+    color: #fff;
+}
+
+/* Breadcrumb */
+.zaar-hero-breadcrumb {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #efaa54;
+}
+.zaar-hero-breadcrumb a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.zaar-hero-breadcrumb span {
+    color: #efaa54;
+    font-weight: 600;
+}
+
+/* Hero Title */
+.zaar-hero-title {
+    font-size: 3rem;
+    margin: 10px 0 0 0;
+    color: #efaa54;
+    font-weight: 700;
+}
+
+/* About Section */
+.zaar-about-section {
+    background-color: #ffffff;
+}
+
+/* Parent Flex Container */
+.zaar-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Left Div */
+.zaar-about-left {
+    flex: 1 1 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* H2 container */
+.zaar-about-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* H2 Style */
+.zaar-about-left h2 {
+    font-size: 2rem;
+    color: #07293f;
+    margin: 0;
+}
+
+/* Paragraphs */
+.zaar-about-left p {
+    font-size: 1.125rem;
+    color: #000000;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.zaar-about-left p:last-child {
+    margin-bottom: 0;
+}
+
+/* Right Div */
+.zaar-about-right {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.zaar-about-right .zaar-logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.zaar-about-right .zaar-btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #efaa54;
+    color: #07293f;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.zaar-about-right .zaar-btn-primary:hover {
+    background-color: #07293f;
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .zaar-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .zaar-about-left, .zaar-about-right {
+        flex: 1 1 100%;
+    }
+}
+
+
+
+/* Bridano individual page CSS */
+/* Hero Container */
+.brid-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+/* Hero Section */
+.brid-hero-section {
+    width: 100%;
+    background-color: #07293f; /* Dark blue */
+    padding: 100px 0;
+    color: #fff;
+}
+
+/* Breadcrumb */
+.brid-hero-breadcrumb {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #efaa54;
+}
+.brid-hero-breadcrumb a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.brid-hero-breadcrumb span {
+    color: #efaa54;
+    font-weight: 600;
+}
+
+/* Hero Title */
+.brid-hero-title {
+    font-size: 3rem;
+    margin: 10px 0 0 0;
+    color: #efaa54;
+    font-weight: 700;
+}
+
+/* About Section */
+.brid-about-section {
+    background-color: #ffffff;
+}
+
+/* Parent Flex Container */
+.brid-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Left Div */
+.brid-about-left {
+    flex: 1 1 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* H2 container */
+.brid-about-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* H2 Style */
+.brid-about-left h2 {
+    font-size: 2rem;
+    color: #07293f;
+    margin: 0;
+}
+
+/* Paragraphs */
+.brid-about-left p {
+    font-size: 1.125rem;
+    color: #000000;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.brid-about-left p:last-child {
+    margin-bottom: 0;
+}
+
+/* Right Div */
+.brid-about-right {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.brid-about-right .brid-logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.brid-about-right .brid-btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #efaa54;
+    color: #07293f;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.brid-about-right .brid-btn-primary:hover {
+    background-color: #07293f;
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .brid-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .brid-about-left, .brid-about-right {
+        flex: 1 1 100%;
+    }
+}
 
