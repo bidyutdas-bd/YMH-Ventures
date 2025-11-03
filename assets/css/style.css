@@ -2254,8 +2254,8 @@ footer .ms-footer-detail .ms-social ul li a:hover {
 }
 
 /* Headings */
-.vn-blog-post-title.h2, .vn-blog-post-title.h2-like {
-    font-size:42px; /* Main blog H2 */
+.vn-blog-post-title.h2 {
+    font: size 30px; 
     margin-bottom:20px; color:#07293f; font-weight:700;
 }
 
@@ -2958,4 +2958,136 @@ footer .vn-blog-container {
         flex: 1 1 100%;
     }
 }
+
+
+/* Dummy individual page CSS */
+/* Hero Container */
+.dum-hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    text-align: center;
+}
+
+/* Hero Section */
+.dum-hero-section {
+    width: 100%;
+    background-color: #07293f; /* Dark blue */
+    padding: 100px 0;
+    color: #fff;
+}
+
+/* Breadcrumb */
+.dum-hero-breadcrumb {
+    font-size: 14px;
+    margin-bottom: 20px;
+    color: #efaa54;
+}
+.dum-hero-breadcrumb a {
+    text-decoration: none;
+    color: #ffffff;
+}
+.dum-hero-breadcrumb span {
+    color: #efaa54;
+    font-weight: 600;
+}
+
+/* Hero Title */
+.dum-hero-title {
+    font-size: 3rem;
+    margin: 10px 0 0 0;
+    color: #efaa54;
+    font-weight: 700;
+}
+
+/* About Section */
+.dum-about-section {
+    background-color: #ffffff;
+}
+
+/* Parent Flex Container */
+.dum-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+/* Left Div */
+.dum-about-left {
+    flex: 1 1 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* H2 container */
+.dum-about-heading {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+/* H2 Style */
+.dum-about-left h2 {
+    font-size: 2rem;
+    color: #07293f;
+    margin: 0;
+}
+
+/* Paragraphs */
+.dum-about-left p {
+    font-size: 1.125rem;
+    color: #000000;
+    line-height: 1.6;
+    text-align: left;
+    margin-bottom: 20px;
+}
+.dum-about-left p:last-child {
+    margin-bottom: 0;
+}
+
+/* Right Div */
+.dum-about-right {
+    flex: 1 1 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.dum-about-right .dum-logo {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}
+.dum-about-right .dum-btn-primary {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    background-color: #efaa54;
+    color: #07293f;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+.dum-about-right .dum-btn-primary:hover {
+    background-color: #07293f;
+    color: #ffffff;
+}
+
+/* Responsive */
+@media (max-width: 991px) {
+    .dum-flex {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .dum-about-left, .dum-about-right {
+        flex: 1 1 100%;
+    }
+}
+
 
