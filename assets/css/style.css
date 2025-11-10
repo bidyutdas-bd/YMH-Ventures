@@ -137,6 +137,7 @@ p {
 .section-title h2 span {
   color: #efaa54;
   
+  
 }
 .section-title .ligh-title {
   margin: auto;
@@ -292,9 +293,13 @@ p {
 .margin-b-50 {
   margin-bottom: 50px;
 }
-
 .padding-tb-80 {
-  padding: 80px 0;
+  padding: 70px 0;
+}
+
+
+.padding-tb-50{
+  padding: 50px 0;
 }
 
 .m-b-minus-30px {
@@ -1449,7 +1454,7 @@ filter: invert(100%); */
 }
 
 /** Start Portfolio Section **/
-.ms-portfolio .section-title .ligh-title {
+/* .ms-portfolio .section-title .ligh-title {
   -webkit-transform: translateY(-63%);
           transform: translateY(-63%);
 }
@@ -1643,6 +1648,153 @@ li.mixitup-control-active {
 
 .fancybox-progress {
   background: #07293f;
+} */
+
+
+/* Portfolio Project Boxes - Section Only */
+
+.ms-portfolio .section-title .ligh-title {
+  -webkit-transform: translateY(-63%);
+          transform: translateY(-63%);
+}
+.ms-portfolio .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.ms-portfolio .col-lg-6,
+.ms-portfolio .col-md-6,
+.ms-portfolio .col-sm-12 {
+    flex: 1 1 calc(33.333% - 20px); /* 3 boxes per row */
+    box-sizing: border-box;
+    margin-bottom: 30px; /* vertical spacing between rows */
+}
+
+/* Project Box with shadow */
+.ms-portfolio .ms-project-box {
+    position: relative;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: #fff;
+cursor: default;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 360px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Portfolio Image - top 80% with spacing */
+.ms-portfolio .ms-project-box .portfolio-img {
+    width: calc(100% - 30px);
+    height: 80%;
+    margin: 12px auto 0 auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 12px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.4s ease;
+}
+
+/* Overlay for hover effect - only image portion */
+.ms-portfolio .ms-project-box .portfolio-img::before {
+    content: "";
+    position: absolute;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(50,50,50,0.3); /* lighter overlay initially hidden */
+    backdrop-filter: blur(0px);
+    -webkit-backdrop-filter: blur(0px);
+    transition: top 0.4s ease, backdrop-filter 0.4s ease, background-color 0.4s ease;
+    z-index: 3;
+}
+
+.ms-portfolio .ms-project-box:hover .portfolio-img::before {
+    top: 0;
+    background-color: rgba(50,50,50,0.4); /* slightly darker ash on hover */
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+}
+
+/* Text Section - bottom 20% */
+.ms-portfolio .ms-project-box .text-section {
+    height: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+/* Category text */
+.ms-portfolio .ms-project-box .text-section .links {
+    font-size: 14px;
+    color: #666;
+}
+
+/* Learn More button on hover - appears above image */
+.ms-portfolio .ms-project-box .learn-more {
+    position: absolute;
+    top: 40%; /* roughly center on image */
+    left: 50%;
+    transform: translate(-50%, -50%) translateY(10px);
+    font-size: 14px;
+    color: #07293f;
+    background-color: #fff;
+    padding: 8px 18px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: 600;
+    opacity: 0;
+    transition: opacity 0.3s ease, transform 0.3s ease, background-color 0.3s ease;
+    z-index: 4;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.15);
+}
+
+.ms-portfolio .ms-project-box:hover .learn-more {
+    opacity: 1;
+    transform: translate(-50%, -50%) translateY(0);
+}
+
+.ms-portfolio .ms-project-box .learn-more:hover {
+    background-color: #efaa54;
+    color: #07293f;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.2);
+}
+
+/* Box hover effect - shadow & lift */
+.ms-portfolio .ms-project-box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.25);
+}
+
+/* Hover image scale */
+.ms-portfolio .ms-project-box:hover .portfolio-img {
+    transform: scale(1.05);
+}
+
+.ms-project-box h3 {
+  color: #333;
+  margin-top: 0;
+  font-size: 20px;
+  font-weight: 600;
+}
+/* .ms-portfolio .section-title h2 {
+    margin-bottom: 10px;
+  } */
+/* Responsive */
+@media (max-width: 768px) {
+    .ms-portfolio .col-lg-6,
+    .ms-portfolio .col-md-6 {
+        flex: 1 1 100%;
+    }
 }
 
 /** End Portfolio Section **/
@@ -2247,46 +2399,124 @@ footer .ms-footer-detail .ms-social ul li a:hover {
 
 
 /* Blog Post Section */
+.vn-blog-subtitle{
+    font-size: 30px;
+
+}
 .vn-blog-post {
-    width:100%; background: #F9F6F7; 
-    padding:30px 20px 30px 20px; 
-    color:#07293f; /* dark blue text */
+    width: 100%;
+    background: #F9F6F7;
+    padding: 30px 20px;
+    color: #07293f; /* dark blue text */
 }
 
 /* Headings */
-.vn-blog-post-title.h2 {
-    font: size 30px; 
-    margin-bottom:20px; color:#07293f; font-weight:700;
+.vn-blog-post-title {
+    margin-bottom: 20px;
+    color: #07293f;
+      font-size: 30px;
+
 }
 
-.vn-blog-post-title.h3, .vn-blog-post-title.h3-like {
-    font-size:30px; /* Ventures/Projects H3 */
-    margin-bottom:15px; color:#efaa54; font-weight:600;
+.vn-blog-post-title.h3, 
+.vn-blog-post-title.h3-like {
+      font-size: 20px;
+
+    margin-bottom: 15px;
+    color: #efaa54; /* Ventures/Projects H3 */
+}
+.vn-blog-post-title.h2{
+  font-size: 30px;
 }
 
-.vn-blog-post-title.h4, .vn-blog-post-title.h4-like {
-    font-size:24px; /* Section H4 */
-    margin-bottom:12px; color:#07293f; font-weight:500;
+.vn-blog-post-title.h4, 
+.vn-blog-post-title.h4-like {
+    margin-bottom: 12px;
+    color: #07293f; /* Section H4 */
 }
 
-.vn-blog-post-meta {
-    font-size:14px; color:#888; margin-bottom:20px;
-}
-
+/* Paragraphs */
 .vn-blog-post-paragraph {
-    font-size:16px; line-height:1.8; margin-bottom:20px; color:#000; /* black text */
+    font-size: 16px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #000; /* black text */
 }
 
-.vn-blog-post-blockquote {
-    font-style:italic; color:#07293f; border-left:4px solid #efaa54; padding-left:15px; margin:20px 0;
+/* Blog Meta (if used) */
+.vn-blog-post-meta {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 20px;
 }
+
+/* Blockquote (optional, commented out) */
+/* 
+.vn-blog-post-blockquote {
+    font-style: italic;
+    color: #07293f;
+    border-left: 4px solid #efaa54;
+    padding-left: 15px;
+    margin: 20px 0;
+} 
+*/
+
+
+/* Author Section */
+.vn-blog-author {
+    background-color: #F9F6F7; /* same as blog content */
+    padding: 20px 0;
+}
+
+.vn-blog-author-wrapper {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+/* Author Image Holder */
+.vn-blog-author-img-holder {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+    position: relative;
+    
+    
+    
+}
+
+.vn-blog-author-img-holder img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    
+}
+
+.vn-blog-author-info a {
+    font-weight: 600;
+    text-decoration: none;
+    color: #07293f;
+}
+
+.vn-blog-author-info span {
+    display: block;
+    font-size: 14px;
+    color: #07293f;
+}
+
 
 /* Footer container */
 footer .vn-blog-container {
-    max-width:1200px; margin:0 auto; padding:0 15px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
 }
-
-
 
 
 /* Voktis individual page CSS */
